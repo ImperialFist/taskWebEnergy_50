@@ -1,0 +1,520 @@
+.hero {
+
+    // .hero__navigation
+
+    &__navigation {
+        
+    }
+
+    // .hero__title
+
+    &__title {
+        text-transform: uppercase;
+        font-size: rem(32);
+        line-height: rem(41);
+        color: $secondaryFontColor;
+        padding: rem(50) 0 rem(30);
+    }
+
+    // .hero__tags
+
+    &__tags {
+        padding-bottom: rem(10);
+    }
+
+    // .hero__filter
+
+    &__filter {
+        flex: 0 0 rem(256);
+    }
+
+    // .hero__content
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(200);
+    }
+
+    // .hero__order-wrapper
+    &__order-wrapper{
+        margin-bottom: rem(20);
+        gap: rem(25);
+    }
+
+    // .hero__back-btn
+    &__back-btn{
+        font-size: rem(16);
+        line-height: rem(20);
+        color: $danger-color;
+        background: url(../../img/svg/iconArrowLeft.svg) no-repeat left/auto;
+        background-color: $default-color;
+        padding: rem(4) 0 rem(4) rem(24);
+        cursor: pointer;
+        display: none;
+    }
+
+}
+.container {
+}
+.navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // .navigation-list__item
+
+    &__item {
+        line-height: rem(18);
+    }
+
+    &__item::after {
+        content: ">";
+        padding: 0 rem(4);
+        color: $neutral-regular;
+    }
+    &__item:last-child::after{
+        content: " ";
+    }
+
+    // .navigation-list__link
+
+    &__link {
+        color: $neutral-regular;
+        cursor: pointer;
+    }
+}
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    // .tags-list__item
+
+    &__item, &__btn {
+        font-size: rem(12);
+        line-height: rem(14);
+        margin: 0 rem(8) rem(8) 0;
+        border: 1px solid $border-base;
+        border-radius: 2px;
+        background-color: $primary-color;
+        transition: all 0.3s ease 0s;
+    }
+
+    // .tags-list__link
+
+    &__link, &__btn-link {
+        display: block;
+        padding: rem(8.5) rem(8);
+        color: $mainFontColor;
+    }
+
+    &__item:hover {
+        background-color: $danger-color;
+    }
+    &__item:hover &__link{
+        color: $default-color;
+    }
+    &__btn:hover &__btn-link{
+        color: $danger-color;
+    }
+
+    &__btn {
+        border: 1px solid $danger-color;
+    }
+
+}
+
+._hide-tag{
+    display: none;
+}
+
+.select-order {
+
+    // .select-order__select-list
+    &__select-list{
+        display: block;
+        // margin-left: auto;
+        width: rem(187);
+    }
+}
+
+.order-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    // .order-wrapper__filter
+    &__filter{
+        display: none;
+    }
+
+    // .order-wrapper__btn
+    &__btn{
+        color: $secondaryFontColor;
+        font-size: rem(16);
+        line-height: rem(20);
+        background: url(../../img/svg/iconFilter.svg) no-repeat left/auto;
+        background-color: $default-color;
+        padding-left: rem(32);
+        cursor: pointer;
+    }
+
+
+}
+
+.select-list {
+
+    // .select-list__item
+
+    &__item {
+        border: none;
+    }
+}
+
+.filter {
+    background-color: $primary-color;
+    border: 1px solid $border-light;
+
+    // .filter__mobile-btn
+    &__mobile-btns{
+        position: relative;
+        //прячем раздел для мобильного с кнопками
+        // opacity: 0;
+        // visibility: hidden;
+        // pointer-events: none;
+        display: none;
+    }
+    // .filter__mobile-btns
+    &__mobile-btns._active-filter{
+        display: block;
+    }
+
+    // .filter__back
+    &__back{
+        width: rem(104);
+        font-size: rem(20);
+        line-height: rem(26);
+        font-weight: 500;
+        color: $secondaryFontColor;
+        background: url(../../img/svg/iconArrowLeft.svg) no-repeat left/auto;
+        background-color: $default-color;
+        padding-left: rem(23);
+        margin-top: rem(13);
+        margin-left: rem(18);
+    }
+
+    // .filter__close
+    &__close{
+        position: fixed;
+        top: 0;
+        left: rem(268);
+        background: url(../../img/svg/iconCloseF.svg) no-repeat center/auto;
+        background-color: $danger-secondary;
+        width: rem(57);
+        height: rem(55);
+        z-index: 151;
+    }
+
+}
+
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+
+    // .filter-list__item
+
+    &__item {
+        
+
+    }
+
+    // .filter-list__title
+
+    &__title {
+        color: $secondaryFontColor;
+        font-size: rem(16);
+        line-height: rem(20);
+        font-weight: 500;
+        width: 100%;
+        text-align: start;
+        position: relative;
+        background-color: $primary-color;
+        padding: rem(13) 0 rem(14) rem(20);
+    }
+
+    // &__item:last-child .pages__btn:last-child{
+
+    &__item:first-child &__title:first-child{
+        padding-top: rem(33);
+    }
+
+
+    &__title::after {
+        content: "";
+        background: url(../../img/svg/iconArrowBottom.svg) no-repeat center/auto;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        right: rem(20);
+        transition: all 0.3s ease 0s;
+
+    }
+
+    &__title._spoller-active::after{
+        transform: rotate(180deg);
+    }
+
+    // .filter-list__content
+
+    &__content {
+        max-width: rem(216);
+        margin: 0 auto;
+        border-bottom: 1px solid $border-light;
+        padding-bottom: rem(30);
+    }
+}
+
+
+.filter-bottom {
+    display: flex;
+    flex-direction: column;
+
+    // .filter-bottom__show
+
+    &__show {
+        font-size: rem(16);
+        line-height: rem(16);
+        font-weight: 500;
+        color: $danger-color;
+        border: 2px solid $danger-color;
+        margin: 0 rem(20);
+        padding: rem(17) 0;
+        background-color: $primary-color ;
+        cursor: pointer;
+
+    }
+
+    // .filter-bottom__reset
+
+    &__reset {
+        font-size: rem(16);
+        line-height: rem(16);
+        background-color: transparent;
+        padding: rem(20) 0;
+        color: $danger-color;
+        cursor: pointer;
+        margin-bottom: rem(80);
+    }
+}
+.content-list {
+    display: flex;
+    flex-wrap: wrap;
+    // .content-list__item
+
+    &__item {
+        flex: 0 1 rem(256);
+    }
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 rem(-10);
+}
+
+.card {
+    border: 1px solid $border-light;
+    // .card__img
+
+    &__img {
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        margin: rem(20) auto rem(24) auto;
+    }
+
+    // .card__articul
+
+    &__articul {
+        color: $neutral-secondary;
+        line-height: rem(18);
+        padding: 0 0 rem(8) rem(20);
+    }
+
+    // .card__description
+
+    &__description {
+        color: $secondaryFontColor;
+        line-height: rem(18);
+        padding: 0 rem(20) rem(14) rem(20);
+    }
+
+    // .card__trade-price
+
+    &__trade-price {
+        font-size: rem(18);
+        line-height: rem(23);
+        color: $light-color;
+        padding: 0 0 rem(2) rem(20);
+    }
+
+    // .card__retail-price
+
+    &__retail-price {
+        color: $danger-color;
+        padding: 0 0 rem(20) rem(20);
+        font-weight: 500;
+        font-size: rem(18);
+    }
+    
+    // .card__card-buttons
+
+    &__card-buttons{
+        margin-bottom: rem(23);
+    }
+
+}
+
+.card:hover{
+    box-shadow: 0px 0px 20px rgba(37, 40, 43, 0.2);
+    
+}
+
+.card-buttons {
+    display: flex;
+    align-items: center;
+    // .card-buttons__basket
+
+    &__basket {
+        color: $mainFontColor;
+        font-size: rem(16);
+        line-height: rem(16);
+        padding: rem(10) rem(36);
+        margin: 0 rem(20);
+    }
+
+    // .card-buttons__like
+
+    &__like {
+        background: url(../../img/svg/iconHeart.svg) no-repeat center/auto;
+        width: rem(44);
+        height: rem(36);
+    }
+
+    &__basket, &__like{
+        cursor: pointer;
+        border: 1px solid $neutral-secondary;
+        border-radius: 2px;
+        background-color: $default-color;
+        transition: all 0.3s ease 0s;
+    }
+
+    &__basket:hover, &__like:hover{
+        background-color: $danger-color;
+        color: $default-color;
+    }
+
+    &__like:hover{
+        background: url(../../img/svg/iconSelectedHeart.svg) no-repeat center/auto;
+        background-color: $danger-color;
+    }
+
+}
+
+.content-buttons {
+
+    // .content-buttons__show-more
+
+    &__show-more {
+        flex: 1 1 auto;
+        width: 100%;
+        font-size: rem(16);
+        color: $secondaryFontColor;
+        border: 1px solid $border-light;
+        background-color: $primary-color;
+        padding: rem(15) 0;
+        margin-bottom: rem(30);
+    }
+
+    // .content-buttons__pages
+
+    &__pages {
+    }
+}
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // .pages__list
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    // .pages__previous
+
+    &__previous{
+        background: url(../../img/svg/iconArrowLeft.svg) no-repeat center/auto;
+        margin-right: rem(22);
+    }
+
+    // .pages__next
+
+    &__next{
+        background: url(../../img/svg/iconArrowRight.svg) no-repeat center/auto;
+        margin-left: rem(22);
+    }
+
+    &__next, &__previous{
+        display: block;
+        height: rem(12);
+        width: rem(6);
+        padding: rem(6);
+        cursor: pointer;
+    }
+
+    // .pages__item
+
+    &__item {
+    }
+
+    // .pages__btn
+
+    &__btn {
+        width: rem(24);
+        height: rem(24);
+        background-color: transparent;
+        color: $secondaryFontColor;
+        border-radius: 2px;
+        font-size: rem(16);
+        line-height: rem(20);
+        cursor: pointer;
+        margin-right: rem(14);
+
+    }
+
+    &__btn._current-page{
+        color: $default-color;
+        background-color: $danger-color;
+    }
+
+    // .pages__show-all
+
+    &__show-all{
+        background-color: transparent;
+        color: $danger-color;
+        font-size: rem(16);
+        line-height: rem(20);
+        cursor: pointer;
+    }
+    
+    // не уверен почему последняя страница с таким цветом(можно вынести в модификатор)
+    &__item:last-child .pages__btn:last-child{
+        color: $neutral-secondary;
+    }
+}
+

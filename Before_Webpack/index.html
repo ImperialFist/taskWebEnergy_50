@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <title>Cириус </title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__information">
+                <div class="information-list">
+                    <div class="information-list__logo">
+                        <img class="logo" src="assets/img/svg/iconLogo.svg" alt="Logo">
+                    </div>
+                    <div class="information-list__location">
+                        <div class="location">
+                            <p class="location__description">
+                                Выберите ваш город:
+                            </p>
+                            <a class="location__link" href="#" >
+                                <img class="location__img" src="assets/img/svg/iconMap.svg" alt="Pin icon" >
+                                <span class="location__text">Санкт-Петербург</span>  
+                            </a>
+                        </div>
+                    </div>
+                    <div class="information-list__site-search">
+                        <form class="site-search" action="#">
+                            <input class="site-search__field"  type="search" name="siteSearch" id="siteSearch" placeholder="Поиск">
+                            <button class="site-search__btn"></button>
+                        </form>
+                    </div>
+                    <div class="information-list__work-time">
+                        <p class="work-time">
+                            Режим работы <br> Пн-Пт с 8:00 — 18:00
+                        </p>
+                    </div>
+                    <div class="information-list__socials">
+                        <div class="socials">
+                            <a href="#" class="socials__link">
+                                <img class="socials__img" src="assets/img/svg/iconFa.svg" alt="Facebook link" >
+                            </a>
+                            <a href="#" class="socials__link">
+                                <img class="socials__img" src="assets/img/svg/iconInst.svg" alt="Instagram link" >
+                            </a>
+                            <a href="#" class="socials__link">
+                                <img class="socials__img" src="assets/img/svg/iconVK.svg" alt="Vkontakte link" >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="information-list__phone-contact">
+                        <div class="phone-contact">
+                            <p class="phone-contact__town">
+                                г. Москва 
+                            </p>
+                            <a class="phone-contact__number" href="tel:+74957772345" >+7 (495) 777-2345</a>
+                            <a class="phone-contact__request" href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="information-list__phone-contact">
+                        <div class="phone-contact">
+                            <p class="phone-contact__town">
+                                г. Ногинск 
+                            </p>
+                            <a class="phone-contact__number" href="tel:+74956004400" >+7 (495) 600-4400</a>
+                            <a class="phone-contact__request" href="#">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <div class="container">
+                    <div class="menu-wrapper">
+                        <ul class="menu-list">
+                            <li class="menu-list__item">
+                                <div class="menu-icon">
+                                    <span class="menu-icon__middle"></span>
+                                </div>
+                                <span class="menu-list__text">Каталог</span>
+                            </li>
+                            <li class="menu-list__item">
+                                <img class="logo" src="assets/img/svg/iconLogo.svg" alt="Logo">
+                            </li>
+                            <li class="menu-list__item">
+                                Новости
+                            </li>
+                            <li class="menu-list__item">
+                                О компании
+                            </li>
+                            <li class="menu-list__item">
+                                Скидки
+                            </li>
+                            <li class="menu-list__item">
+                                Доставка и оплата
+                            </li>
+                            <li class="menu-list__item">
+                                Услуги
+                            </li>
+                            <li class="menu-list__item">
+                                Дилеры
+                            </li>
+                            <li class="menu-list__item">
+                                Магазины
+                            </li>
+                            <li class="menu-list__item">
+                                Контакты
+                            </li>
+                            <li class="menu-list__item">
+                                Честный знак 
+                            </li>
+                        </ul>
+                        <ul class="personal-list">
+                            <li class="personal-list__item">
+                                <div class="user-block">
+                                    <a class="user-block__link" id="likeBtn" href="#">
+                                        <img class="user-block__img" src="assets/img/svg/iconHeart.svg" alt="Likes icon" >
+                                        <span class="user-block__counter" id="likesCounter">7</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="personal-list__item">
+                                <div class="user-block">
+                                    <a class="user-block__link" id="cartBtn" href="#">
+                                        <img class="user-block__img" src="assets/img/svg/iconBasket.svg" alt="Basket icon" >
+                                        <span class="user-block__counter" id="basketCounter">8</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="personal-list__item">
+                                <a class="user-cabinet" href="#">
+                                    <span class="personal-list__text">Войти </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Greed section start -->
+                    <div class="size-greed" id="size-greed" aria-hidden="true">
+                        <div class="size-greed__content">
+                            <div class="size-greed__header-sg header-sg">
+                                <h2 class="header-sg__title">Выбор опций</h2>
+                                <button class="header-sg__close" id="closeSgBtn" data-close type="button" ></button>
+                            </div>
+                            <div class="size-greed__sub-header sub-header">
+                                <p class="sub-header__size-title">Размерный ряд</p>
+                                <p class="sub-header__count-title">Количество</p>
+                            </div>
+                            <ul class="sg-list">
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="1" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="1" class="option-counter__increse"></button>
+                                        <button data-counter-btn="1" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="2" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="2" class="option-counter__increse"></button>
+                                        <button data-counter-btn="2" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="3" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="3" class="option-counter__increse"></button>
+                                        <button data-counter-btn="3" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="4" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="4" class="option-counter__increse"></button>
+                                        <button data-counter-btn="4" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="5" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="5" class="option-counter__increse"></button>
+                                        <button data-counter-btn="5" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585) 
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="6" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="6" class="option-counter__increse"></button>
+                                        <button data-counter-btn="6" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                                <li class="sg-list__item">
+                                    <p class="sg-list__description">
+                                        Размер 104-108, Рост 170-176 (Арт. 43585)
+                                    </p>
+                                    <div class="option-counter">
+                                        <input data-counter-id="7" class="option-counter__input" type="number" value="0" min="0" disabled name="" id="" placeholder="0">
+                                        <button data-counter-btn="7" class="option-counter__increse"></button>
+                                        <button data-counter-btn="7" class="option-counter__decrese"></button>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="sg-form" action="#">
+                                <button class="sg-form__btn"  type="submit">
+                                    Добавить в корзину 
+                                </button>
+                            </form>
+                        </div>
+                    
+                    </div>
+                    <!-- Greed section end -->
+            </div>
+        </div>
+
+    </header>
+    <section class="hero">
+        <div class="container">
+            <div class="hero__navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#" >
+                            Каталог товаров
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#" >
+                            Спецодежда
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a class="navigation-list__link" href="#" >
+                            Спецодежда зимняя 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button class="hero__back-btn">
+                Назад 
+            </button>
+            <h1 class="hero__title">Спецодежда Зимняя</h1>
+            <div class="hero__tags">
+                <ul class="tags-list">
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Спецодежда с заключением Минпромторга
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Костюмы женские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Костюмы мужские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Костюмы сварщика
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Жилеты женские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Жилеты мужские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Жилеты зимние
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Брюки
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Куртки женские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Куртки мужские
+                        </a>
+                    </li>
+                    <li class="tags-list__item">
+                        <a class="tags-list__link" href="#" >
+                            Полукомбинезоны зимние 
+                        </a>
+                    </li>
+                    <li class="tags-list__item _hide-tag">
+                        <a class="tags-list__link" href="#" >
+                            Костюмы сварщика 
+                        </a>
+                    </li>
+                    <li class="tags-list__item _hide-tag">
+                        <a class="tags-list__link" href="#" >
+                            Жилеты женские 
+                        </a>
+                    </li>
+                    <li class="tags-list__item _hide-tag">
+                        <a class="tags-list__link" href="#" >
+                            Жилеты мужские 
+                        </a>
+                    </li>
+                    <li class="tags-list__btn">
+                        <a class="tags-list__btn-link"  href="#" >
+                            Показать еще
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__order-wrapper order-wrapper">
+                <div class="select-order select-order__select-list">
+                    <select class="select-list" name="sortOption" id="sortOption">
+                        <option class="select-list__item" value="byDefault" >По умолчанию</option>
+                        <option class="select-list__item" value="byPopular" >По популярности</option>
+                        <option class="select-list__item" value="byCostInc" >По возрастанию цены</option>
+                        <option class="select-list__item" value="byCostDecr" >По убыванию цены</option>
+                        <option class="select-list__item" value="byNew" >По новинкам</option>
+                        <option class="select-list__item" value="byDiscount" >По скидке</option>
+                        <option class="select-list__item" value="byAlphabet" >По алфавиту</option>
+                    </select>
+                </div>
+                <div class="order-wrapper__filter">
+                    <button class="order-wrapper__btn" id="showFilterBtn">
+                        Фильтр
+                    </button>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="hero__filter">
+                    <div class="filter">
+                        <div class="filter__mobile-btns">
+                            <button class="filter__back" id="filter__back">
+                                Фильтр 
+                            </button>
+                            <button class="filter__close" id="filter__close">
+                                
+                            </button>
+                        </div>
+                        <ul class="filter-list" data-spollers>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title _spoller-active" data-spoller>
+                                    Цена, руб
+                                </button>
+                                    <div class="filter-list__content">
+                                        <div class="cost-slider">
+                                            <div class="cost-slider__cost-values cost-values">
+                                                <div class="cost-values__from">
+                                                    <label class="cost-values__label" for="range1">от</label>
+                                                    <input class="cost-values__input" type="number" name="" id="range1" placeholder="86">
+                                                </div>
+                                                <div class="cost-values__to">
+                                                    <label class="cost-values__label" for="range2">до</label>
+                                                    <input class="cost-values__input" type="number" name="" id="range2" placeholder="150 000">
+                                                </div>
+                                            </div>
+                                            <div class="cost-slider__wrapper">
+                                                <div class="cost-slider__slider-track"></div>
+                                                <input class="cost-slider__first" type="range" min="86" max="150000" value="86" id="slider-1" >
+                                                <input class="cost-slider__second" type="range" min="86" max="150000" value="150000" id="slider-2" >
+                                            </div>
+                                        </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Вид изделия
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Брюки
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Жилет
+                                            <input type="checkbox" disabled="disabled"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Костюм
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Куртка
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Полукомбинезон
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Сезон
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Зима
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Торговая марка / Бренд
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            СИРИУС
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Пол
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Женский 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Мужской 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Универсальный 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Состав
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Брюки 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Жилет 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Костюм 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Куртка 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Полукомбинезон 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Полукомбинезон 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Ткань/Материал верха 
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Брюки 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Жилет 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Костюм 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Куртка 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Полукомбинезон 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Утеплитель
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Брюки 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Жилет 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Костюм 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Куртка 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Полукомбинезон 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Назначение
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Брюки 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Жилет 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Костюм 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="filter-list__item">
+                                <button class="filter-list__title" data-spoller>
+                                    Цвет
+                                </button>
+                                <div class="filter-list__content">
+                                    <div class="custom-checkbox">
+                                        <label class="control control--checkbox">
+                                            Бирюзовый 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Васильковый 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Красный 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Лимнонный 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Олива 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Оранжевый 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Серый 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Синий 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Черный, красный 
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                        <label class="control control--checkbox">
+                                            Черный
+                                            <input type="checkbox"/>
+                                            <div class="control__indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="filter-bottom">
+                            <button class="filter-bottom__show">
+                                Показать (123)
+                            </button>
+                            <button class="filter-bottom__reset">
+                                Сбросить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__content">
+                    <ul class="content-list">
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample1.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample5.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample3.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample4.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample2.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample5.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample3.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample4.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample2.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample5.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample3.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample4.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample2.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample5.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample3.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample4.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample2.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample5.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample3.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="content-list__item">
+                            <div class="card">
+                                <img class="card__img" src="assets/img/card/cardExample4.png" alt="Example" >
+                                <p class="card__articul">Арт 1232425</p>
+                                <p class="card__description">
+                                    Костюм "СИРИУС-Горка" куртка, брюки (гражданские размеры) КМФ Мультикам
+                                </p>
+                                <p class="card__trade-price">Опт 3144 ₽</p>
+                                <p class="card__retail-price">Розница 4235 ₽</p>
+                                <div class="card-buttons card__card-buttons">
+                                    <button class="card-buttons__basket">В корзину</button>
+                                    <button class="card-buttons__like"></button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="content-buttons">
+                        <button class="content-buttons__show-more">
+                            Показать еще
+                        </button>
+                        <div class="content-buttons__pages">
+                            <div class="pages">
+                                <button class="pages__previous"></button>
+                                <ul class="pages__list">
+                                    <li class="pages__item">
+                                        <button class="pages__btn _current-page">
+                                            1
+                                        </button>
+                                    </li>
+                                    <li class="pages__item">
+                                        <button class="pages__btn">
+                                            2
+                                        </button>
+                                    </li>
+                                    <li class="pages__item">
+                                        <button class="pages__btn">
+                                            3
+                                        </button>
+                                    </li>
+                                    <li class="pages__item">
+                                        <button class="pages__btn">
+                                            4
+                                        </button>
+                                    </li>
+                                </ul>
+                                <button class="pages__show-all">Все</button>
+                                <button class="pages__next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="bottom-content">
+                    <div class="bottom-content__contact">
+                        <div class="phone-contact">
+                            <a class="phone-contact__number _footer-contact" href="tel:+74957772345" >+7 (495) 777-2345</a>
+                            <a class="phone-contact__request _footer-contact" href="#">Заказать звонок</a>
+                        </div>
+                        <a class="info-mail" href="mailto:info@planeta-sirius.ru">info@planeta-sirius.ru</a>
+                        <div class="socials _footer-socials">
+                            <a class="socials__link" href="#">
+                                <img class="socials__img" src="assets/img/svg/iconFa.svg" alt="Facebook link" >
+                            </a>
+                            <a class="socials__link" href="#">
+                                <img class="socials__img" src="assets/img/svg/iconInst.svg" alt="Instagram link" >
+                            </a>
+                            <a class="socials__link" href="#">
+                                <img class="socials__img" src="assets/img/svg/iconVK.svg" alt="Vkontakte link" >
+                            </a>
+                        </div>
+                        <div class="price-list">
+                            <a href="#" class="price-list__link">
+                                <img class="price-list__img" src="assets/img/svg/iconExcel.svg" alt="Price list link" >
+                                Скачать прайс-лист 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom-content__category-list">
+                        <ul class="category-list">
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    каталог
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    СПЕЦОДЕЖДА
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    Средства защиты рук
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    Активный отдых
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    Хозтовары и постельные принадлежности
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                   <span class="category-list__marked"> Ликвидация </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-content__category-list">
+                        <ul class="category-list">
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    обувь 
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    Средства индивидуальной защиты
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    жилеты на все случаи жизни 
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    линия Plus
+                                </a>
+                            </li>
+                            <li class="category-list__item">
+                                <a class="category-list__link" href="#">
+                                    <span class="category-list__marked _item-mobile"> Ликвидация </span>
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-content__subscribe-block">
+                        <div class="subscribe-block">
+                            <p class="subscribe-block__title">
+                                Подпишитесь на новости и акции и будьте в курсе всего! 
+                            </p>
+                            <form class="subscribe-form" action="#">
+                                <input class="subscribe-form__field"  type="email" name="subscribeInput" id="subscribeInput" placeholder="Введите свой e-mail">
+                                <button class="subscribe-form__btn"></button>
+                            </form>
+                            <form class="personal-agreement" action="#">
+                                <input class="personal-agreement__checkbox" type="checkbox" name="personalDataCheck" id="personalDataCheck">
+                                <label class="personal-agreement__label" for="personalDataCheck">
+                                     Я даю согласие на обработку персональных данных и соглашаюсь с правилами обработки персональных данных.
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="container">
+                <div class="copyright">
+                    <p class="copyright__title">
+                        2021 © PLANETA-SIRIUS.RU
+                    </p>
+                    <p class="copyright__description">
+                        Вся приведенная на сайте информация, носят исключительно ознакомительный характер и не является публичной офертой.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
